@@ -1,0 +1,8 @@
+plugins {
+  id 'nu.studer.credentials' version '1.0.4'
+}
+task printDollarValue() {
+    doLast {
+        println("dollar value: '" + credentials.dollarKey + "'")
+    }
+}
